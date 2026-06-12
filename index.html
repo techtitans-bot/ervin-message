@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for Ervin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glow-bg"></div>
+    <canvas id="canvas"></canvas>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <div class="intro-container" id="introScreen">
+        <h1 class="intro-title">Message Para Saimo Bes (Ervin) 💙</h1>
+        <button class="btn-open" id="openBtn">Open Message</button>
+    </div>
+
+    <div class="container-card" id="cardScreen">
+        <div class="names-header">
+            <span>From: Gracio 💙</span>
+            <span>To: Ervin 💙</span>
+        </div>
+
+        <div class="photo-frame">
+            <img id="ervinPhoto" src="ervin.jpg" alt="Ervin">
+        </div>
+
+        <div class="message-text">
+            <span id="typewriterText"></span><span class="cursor-typewriter">|</span>
+        </div>
+
+        <div class="controls">
+            <button class="music-btn" id="musicToggle" title="Play/Pause Music">🎵</button>
+        </div>
+
+        <div class="ending-text">
+            Thank you for being part of my life, Ervin. 💙
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="tnwm.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
